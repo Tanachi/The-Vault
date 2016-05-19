@@ -10,6 +10,12 @@ module.exports = function() {
       return valueVault;
     else
       return null;
-  }
+  },
+  setValue:function(key,value){
+      if(!key || !value)
+        return;
+      keyVault = key;
+      valueVault = value;
+    }
   };
 };
